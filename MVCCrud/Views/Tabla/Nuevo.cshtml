@@ -1,0 +1,84 @@
+﻿@model MVCCrud.Models.ViewModels.TablaViewModel
+@{
+    ViewBag.Title = "Nuevo";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+@using (Html.BeginForm("Nuevo","Tabla",FormMethod.Post)) {
+<div class="row">
+    <div class="col-md-12">
+        <div>
+            @Html.LabelFor(d => d.IdType)
+            @Html.TextBoxFor(d => d.IdType, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.IdType, null, new { @class = "red" })
+        </div>
+        <div>
+            @Html.LabelFor(d => d.IdColor)
+            @Html.TextBoxFor(d => d.IdColor, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.IdColor, null, new { @class = "red" })
+        </div>
+        <div>
+            @Html.LabelFor(d => d.IdBrand)
+            @Html.TextBoxFor(d => d.IdBrand, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.IdBrand, null, new { @class = "red" })
+        </div>
+        <div>
+            @Html.LabelFor(d => d.IdProvider)
+            @Html.TextBoxFor(d => d.IdProvider, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.IdProvider, null, new { @class = "red" })
+        </div>
+        <div>
+            @Html.LabelFor(d => d.IdCatalog)
+            @Html.TextBoxFor(d => d.IdCatalog, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.IdCatalog, null, new { @class = "red" })
+        </div>
+        <div>
+            @Html.LabelFor(d => d.Title)
+            @Html.TextBoxFor(d => d.Title, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.Title, null, new { @class = "red" })
+        </div>
+        <div>
+            @Html.LabelFor(d => d.Nombre)
+            @Html.TextBoxFor(d => d.Nombre, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.Nombre, null, new { @class = "red" })
+        </div>
+        <div>
+            @Html.LabelFor(d => d.Description)<br />
+            @Html.TextBoxFor(d => d.Description, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.Description, null, new { @class = "red" })
+        </div>
+        <div>
+            @Html.LabelFor(d => d.Observations)<br />
+            @Html.TextBoxFor(d => d.Observations, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.Observations, null, new { @class = "red" })
+        </div>
+        <div>
+            @Html.LabelFor(d => d.PriceClient)<br />
+            @Html.TextBoxFor(d => d.PriceClient, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.PriceClient, null, new { @class = "red" })
+        </div>
+        <div>
+            @Html.LabelFor(d => d.IsEnabled)<br />
+            @Html.EditorFor(d => d.IsEnabled, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.IsEnabled, null, new { @class = "red" })
+        </div>
+        <div>
+            @Html.LabelFor(d => d.Keywords)<br />
+            @Html.TextBoxFor(d => d.Keywords, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.Keywords, null, new { @class = "red" })
+        </div>
+        <div>
+            @Html.LabelFor(d => d.DateTime)<br />
+            @Html.EditorFor(d => d.DateTime, "", new { @class = "form-control" })
+            @Html.ValidationMessageFor(d => d.DateTime, null, new { @class = "red" })
+        </div>
+        <br />
+        <div style="text-align:right;">
+            <input value="Guardar" class="btn btn-primary" type="submit" />
+        </div>
+    </div>
+
+</div>
+}
