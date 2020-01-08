@@ -23,8 +23,13 @@ namespace MVCCrud
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/DataTables").Include(
+                      "~/Scripts/DataTables/datatables.min.js" ));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/DataTables/datatables.min.css",
+                      "~/Content/DataTables/jquery.dataTables.min.css",
                       "~/Content/site.css"));
         }
     }

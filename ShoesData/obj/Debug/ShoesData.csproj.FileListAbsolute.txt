@@ -16,8 +16,8 @@ C:\Users\Curso\source\repos\MVCCrud\MVCCrud\ShoesData\bin\Debug\EntityFramework.
 C:\Users\Curso\source\repos\MVCCrud\MVCCrud\ShoesData\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Curso\source\repos\MVCCrud\MVCCrud\ShoesData\bin\Debug\EntityFramework.xml
 C:\Users\Curso\source\repos\MVCCrud\MVCCrud\ShoesData\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Curso\source\repos\MVCCrud\MVCCrud\ShoesData\obj\Debug\ShoesData.csprojAssemblyReference.cache
 C:\Users\Curso\source\repos\MVCCrud\MVCCrud\ShoesData\obj\Debug\ShoesData.csproj.CoreCompileInputs.cache
 C:\Users\Curso\source\repos\MVCCrud\MVCCrud\ShoesData\obj\Debug\ShoesData.csproj.CopyComplete
 C:\Users\Curso\source\repos\MVCCrud\MVCCrud\ShoesData\obj\Debug\ShoesData.dll
 C:\Users\Curso\source\repos\MVCCrud\MVCCrud\ShoesData\obj\Debug\ShoesData.pdb
+C:\Users\Curso\source\repos\MVCCrud\MVCCrud\ShoesData\obj\Debug\ShoesData.csprojAssemblyReference.cache

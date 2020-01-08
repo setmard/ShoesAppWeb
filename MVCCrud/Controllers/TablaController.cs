@@ -12,8 +12,9 @@ namespace MVCCrud.Controllers
     public class TablaController : Controller
     {
         // GET: Tabla
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
+            //string searchString = id;
             List<ListTablaViewModel> lst;
             using (DataProductsEntities db = new DataProductsEntities())
             {
@@ -38,7 +39,18 @@ namespace MVCCrud.Controllers
                                DateUpdate = d.DateUpdate
                               
                                
+             
                            }).ToList();
+
+                //if (!String.IsNullOrEmpty(searchString))
+                //{
+                //    lst = lst.Where(s => s.Nombre.Contains(searchString)).ToList();
+                //}
+            }
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                lst = lst.Where(s => s.Nombre.Contains(searchString)).ToList();
             }
 
             return View(lst);
